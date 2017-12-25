@@ -1,0 +1,147 @@
+R
+    Interpolation in R
+        https://mgimond.github.io/Spatial/interpolation-in-r.html
+
+    Yaml in R
+        https://rstudio-pubs-static.s3.amazonaws.com/122299_a69a7028271b46bf99d167485f0e821e.html
+        https://cran.r-project.org/web/packages/yaml/yaml.pdf
+        https://cran.r-project.org/web/packages/yaml/index.html
+        
+    PGM in R: Pixel Gray Map
+        https://cran.r-project.org/web/packages/pixmap/pixmap.pdf
+        
+    Raster Info:
+        http://www.gdal.org/formats_list.html
+    
+    Coordinate System from raster
+        https://gis.stackexchange.com/questions/23841/create-a-raster-with-georeferenced-information-in-r
+    
+    Grid conversion for map
+        https://www.rdocumentation.org/packages/sp/versions/1.2-5/topics/GridTopology-class
+            cellcentre.offset: vector with the smallest centroid coordinates for each dimension; coordinates refer to the cell centre
+            cellsize: vector with the cell size in each dimension
+            cells.dim: vector with number of cells in each dimension  
+            
+        https://www.rdocumentation.org/packages/sp/versions/1.2-5/topics/SpatialGridDataFrame-class
+        https://gis.stackexchange.com/questions/252900/extracting-spatial-points-that-match-raster-value-using-r
+        https://gis.stackexchange.com/questions/60527/how-to-extract-values-from-rasters-at-location-of-points-in-r
+        https://cengel.github.io/rspatial/2_spDataTypes.nb.html
+        
+    Tmaps for thematic mapping
+        https://cran.r-project.org/web/packages/tmap/vignettes/tmap-nutshell.html
+        https://cran.r-project.org/web/packages/tmap/tmap.pdf
+        https://cran.r-project.org/web/packages/tmap/tmap.pdf
+        https://cran.r-project.org/web/packages/tmaptools/tmaptools.pdf
+        https://www.rdocumentation.org/packages/tmap/versions/1.11/topics/tm_shape
+        https://www.rdocumentation.org/packages/tmap/versions/1.11/topics/tm_raster
+        http://neondataskills.org/R/Multi-Band-Rasters-In-R/
+      
+        
+        
+        Custom color palette for house
+            https://www.r-bloggers.com/creating-color-palettes-in-r/
+            https://stackoverflow.com/questions/8047668/transparent-equivalent-of-given-color
+            http://data.library.virginia.edu/setting-up-color-palettes-in-r/
+            https://cran.r-project.org/web/packages/tmaptools/tmaptools.pdf >> p.27
+        
+          https://rpubs.com/alobo/rasterOnGM >> SOLN**
+        
+Geographic Etc.
+    Custom Coordinate Systems
+        https://support.esri.com/en/technical-article/000008500
+        http://webhelp.esri.com/arcgisdesktop/9.3/index.cfm?TopicName=Projection%20basics%20the%20GIS%20professional%20needs%20to%20know
+    
+    Create Coordinate Systems using corner info with raster
+        https://support.esri.com/en/technical-article/000005501
+        
+    Bounding Boxes
+        http://cite.opengeospatial.org/OGCTestData/wms/1.1.1/spec/wms1.1.1.html
+        http://cite.opengeospatial.org/OGCTestData/wms/1.1.1/spec/files/bbox.gif
+
+Wifi Etc.
+    Signal Strength
+        https://support.metageek.com/hc/en-us/articles/201955754-Understanding-WiFi-Signal-Strength
+        
+    dBm: decibels relative to a milliwatt (-100, -30). -30 higher
+
+ROS
+    Log ROS messages:
+        https://answers.ros.org/question/265487/how-to-log-ros-messages/
+        http://wiki.ros.org/rostopic#rostopic_command-line_tool
+        https://answers.ros.org/question/58112/how-can-i-save-a-msg-to-a-file/
+        http://wiki.ros.org/rosbag -- potentially
+        http://wiki.ros.org/rostopic
+    rostopic echo -p /your_topic/goes/here > /path/to/your/file
+    
+    Info re:saved Maps
+        http://library.isr.ist.utl.pt/docs/roswiki/map_server.html#YAML_format
+        
+        image : Path to the image file containing the occupancy data; can be absolute, or relative to the location of the YAML file
+        resolution : Resolution of the map, meters / pixel
+        origin : The 2-D pose of the lower-left pixel in the map, as (x, y, yaw), with yaw as counterclockwise rotation (yaw=0 means no rotation). Many parts of the system currently ignore yaw.
+        occupied_thresh : Pixels with occupancy probability greater than this threshold are considered completely occupied.
+        free_thresh : Pixels with occupancy probability less than this threshold are considered completely free.
+        negate : Whether the white/black free/occupied semantics should be reversed (interpretation of thresholds is unaffected)
+
+    Going to pass: Int16 message type
+        http://docs.ros.org/api/std_msgs/html/msg/Int16.html
+    
+    Python package:
+        http://duckietown.mit.edu/media/pdfs/1rpRisFoCYUm0XT78j-nAYidlh-cDtLCdEbIaBCnx9ew.pdf
+        http://wiki.ros.org/rospy_tutorials/Tutorials/Makefile >> python makefile
+    
+    Launch file:
+        https://answers.ros.org/question/62743/how-to-create-a-launch-file/
+        http://wiki.ros.org/roslaunch
+        
+    Map server -- continuously updated with map
+        http://library.isr.ist.utl.pt/docs/roswiki/map_server.html
+        http://docs.ros.org/api/nav_msgs/html/msg/OccupancyGrid.html -- maybe easier to use
+    
+    Position specific
+        /odom/pose/pose/position
+
+Linux
+    command bash for wifi:
+        iwconfig wlan0 | grep -i --color quality
+
+
+    How to find dbm
+        https://www.calazan.com/how-to-continuously-monitor-your-wi-fis-signal-strength-in-ubuntu/
+        https://github.com/jcalazan/wlan-signal
+    
+    Results cached running iwlist as regular user >> must run sudo
+        https://ubuntuforums.org/showthread.php?t=1152399
+        https://stackoverflow.com/questions/18277465/why-does-iwlist-scan-return-cached-results-almost-every-time
+            >>code in driver about why
+        
+        
+    Set root privlidges for command so that it runs w/o cache
+        https://unix.stackexchange.com/questions/169212/iwlist-scanning-without-root-privileges/308187#308187
+        https://unix.stackexchange.com/questions/169212/iwlist-scanning-without-root-privileges
+        https://www.howtogeek.com/howto/ubuntu/see-which-groups-your-linux-user-belongs-to/
+        >>myuser ALL=(root) NOPASSWD: /sbin/iwlist wlp3s0 scan
+    
+
+Rasberry Pi
+    Mounting USB flashdrive to transfer documents
+        http://www.instructables.com/id/Mounting-a-USB-Thumb-Drive-with-the-Raspberry-Pi/
+    
+Python
+
+    R in Python
+        https://sites.google.com/site/aslugsguidetopython/data-analysis/pandas/calling-r-from-python
+    
+    Read YAML in Python:
+        https://stackoverflow.com/questions/14359557/reading-yaml-in-python
+
+    Wifi Strength:     
+        https://github.com/jcalazan/wlan-signal/blob/master/wlansignal.py
+        https://ubuntuforums.org/showthread.php?t=1604981 ** better
+        https://www.raspberrypi.org/forums/viewtopic.php?f=91&t=85601 >> final @elParaguay
+
+    Command Line/Terminal w. Sudo in Python
+        https://stackoverflow.com/questions/13045593/using-sudo-with-python-script >> irresponsible
+    
+    Python from a different folder
+        https://stackoverflow.com/questions/279237/import-a-module-from-a-relative-path

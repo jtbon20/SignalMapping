@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>signal_gthr</name>
+  <version>0.0.1</version>
+  <description>The signal_gthr package reads wifi signal strength and current location at a given rate and republishes them recoupled.</description>
+
+
+  <maintainer email="james.t.bonham.20@dartmouth.edu">Taggart Bonham</maintainer>
+
+  <license>BSD</license>
+
+
+  <!-- TODO: <url type="website">http://wiki.ros.org/signal_strength</url>-->
+
+  <author email="james.t.bonham.20@dartmouth.edu">Taggart Bonham</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>geometric_msgs</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_export_depend>geometric_msgs</build_export_depend>
+  <build_export_depend>rospy</build_export_depend>
+  <build_export_depend>std_msgs</build_export_depend>
+  <exec_depend>geometric_msgs</exec_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
+</package>
