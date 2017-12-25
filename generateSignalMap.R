@@ -20,14 +20,14 @@ mapBaseLocation <- readline(prompt="Enter Path to Folder of Map YAML and PGM: ")
 mapDetails <- yaml.load_file(mapLocation + "map.yaml")
 
 #read .PGM for raster of local area Map
-map <- read.pnm(file = mapLocation + "map.yaml")
+map <- read.pnm(file = mapLocation + "map.pnm")
 
 #convert map coordinate system using information from yaml
 #resolution
 res = mapDetails$resolution
 map@cellres <- c(res, res)
 
-#bounding box 
+#bounding box
 gridSizeX = map@size[1]
 gridSizeY = map@size[2]
 maxX = res * gridSizeX + mapDetails$origin[1]
