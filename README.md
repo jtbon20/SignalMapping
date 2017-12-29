@@ -1,11 +1,13 @@
 # Signal Strength Mapping
 
-[![https://img.youtube.com/vi/hceOrScLP7Q/0.jpg](assets/assembled.jpg)](http://www.youtube.com/watch?v=hceOrScLP7Q "deadspott.r")
-
 
 A systematic data-collection system that generates a local-area map overlaid with signal strength data from an autonomous LiDAR system. This package includes a ROS node to run on the master computer that bundles signal and current location data. Additionally, it contains the R-script to process the data and generate a pdf asynchronously. The corresponding ROS node to run on-board is available at [Github](https://github.com/jtbon20/SignalStrengthNode).
 
 ![Alt text](assets/overview.png)
+
+## Project Video
+
+[![https://img.youtube.com/vi/hceOrScLP7Q/0.jpg](https://img.youtube.com/vi/hceOrScLP7Q/0.jpg)](http://www.youtube.com/watch?v=hceOrScLP7Q "deadspott.r")
 
 ## Getting Started
 
