@@ -79,7 +79,7 @@ To check your set-up, run `host$ rosrun rqt_graph rqt_graph` to check your [RQT-
 ### Data Collection
 Now that the nodes are running, allow the robot to drive around the area you are trying to map.
 
-![Alt text](assets/lidarScan.png)
+![Alt text](assets/LIDAR.gif)
 
 After you are satisfied with the local area map, save the resulting map into the data folder, where we've been saving the publishings of the /signal_dtagthr topic.
 ```
