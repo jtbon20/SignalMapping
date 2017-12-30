@@ -1,5 +1,7 @@
 # Signal Strength Mapping
 
+Project Page: http://taggartbonham.me/portfolio/wifimapping.html
+
 
 A systematic data-collection system that generates a local-area map overlaid with signal strength data from an autonomous LiDAR system. This package includes a ROS node to run on the master computer that bundles signal and current location data. Additionally, it contains the R-script to process the data and generate a pdf asynchronously. The corresponding ROS node to run on-board is available at [Github](https://github.com/jtbon20/SignalStrengthNode).
 
