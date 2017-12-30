@@ -7,7 +7,7 @@ A systematic data-collection system that generates a local-area map overlaid wit
 
 ## Project Video
 
-[![https://img.youtube.com/vi/hceOrScLP7Q/0.jpg](assets/overview.png)](http://www.youtube.com/watch?v=hceOrScLP7Q "deadspott.r")
+[![https://img.youtube.com/vi/hceOrScLP7Q/0.jpg](assets/videocover.png)](http://www.youtube.com/watch?v=hceOrScLP7Q "deadspott.r")
 
 ## Getting Started
 
